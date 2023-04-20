@@ -23,7 +23,7 @@ bacnetClient.readProperty(
   Bacnet.enum.PropertyIdentifier.WEEKLY_SCHEDULE,
   (err, value) => {
     if (err) console.log(err);
-    //if (value) value.values.forEach((val) => console.log(val));
+    if (value) value.values.forEach((val, index) => console.log('day: ' + index, val));
     bacnetClient.close();
   }
 );
