@@ -78,6 +78,10 @@ issues, sending pull requests and adding new features.
 Please follow the [Contribution Guide](CONTRIBUTING.md) when submitting any
 changes. Ask the active NPM publishers if you need some advice to start your contribution!
 
+## Notes
+
+This fork has some hacks to be able to read and write BACnet scheduler(17), property WEEKLY_SCHEDULE(123).
+
 ## License
 
 [The MIT License](http://opensource.org/licenses/MIT)
