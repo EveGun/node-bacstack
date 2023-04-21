@@ -1,6 +1,6 @@
 {
   "name": "bacnet-node",
-  "version": "0.2.4",
+  "version": "0.2.5",
   "description": "The BACnet protocol library written in pure JavaScript.",
   "main": "index.js",
   "scripts": {
@@ -27,7 +27,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/BiancoRoyal/node-bacstack.git"
+    "url": "git+https://github.com/EveGun/node-bacstack.git"
   },
   "keywords": [
     "bacnet",
@@ -64,9 +64,9 @@
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/BiancoRoyal/node-bacstack/issues"
+    "url": "https://github.com/EveGun/node-bacstack/issues"
   },
-  "homepage": "https://github.com/BiancoRoyal/node-bacstack#readme",
+  "homepage": "https://github.com/EveGun/node-bacstack#readme",
   "dependencies": {
     "debug": "^4.1.1",
     "iconv-lite": "^0.5.1",
