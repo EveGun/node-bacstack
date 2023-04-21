@@ -24,80 +24,80 @@ bacnetClient.writeProperty(
   [
     [
       {
-        time: { type: 11, value: new Date(1, 1, 1, 7, 0, 0) },
-        value: { type: 1, value: true },
-      },
-      {
-        time: { type: 11, value: new Date(1, 1, 1, 16, 0, 0) },
-        value: { type: 1, value: false },
-      },
-    ],
-    [
-      {
-        time: { type: 11, value: new Date(1, 1, 1, 7, 0, 0) },
+        time: { len: 4, type: 11, value: 946706400000 },
         value: { len: 0, type: 1, value: true },
       },
       {
-        time: { type: 11, value: new Date(1, 1, 1, 16, 0, 0) },
-        value: { type: 1, value: false },
-      },
-    ],
-    [
-      {
-        time: { type: 11, value: new Date(1, 1, 1, 7, 0, 0) },
-        value: { type: 1, value: true },
-      },
-      {
-        time: { type: 11, value: new Date(1, 1, 1, 16, 0, 0) },
-        value: { type: 1, value: false },
-      },
-    ],
-    [
-      {
-        time: { len: 4, type: 11, value: new Date(1, 1, 1, 7, 0, 0) },
-        value: { type: 1, value: true },
-      },
-      {
-        time: { type: 11, value: new Date(1, 1, 1, 16, 0, 0) },
-        value: { type: 1, value: false },
-      },
-    ],
-    [
-      {
-        time: { type: 11, value: new Date(1, 1, 1, 7, 0, 0) },
-        value: { type: 1, value: true },
-      },
-      {
-        time: { type: 11, value: new Date(1, 1, 1, 16, 0, 0) },
+        time: { len: 4, type: 11, value: 946738800000 },
         value: { len: 0, type: 1, value: false },
       },
     ],
     [
       {
-        time: { type: 11, value: new Date(1, 1, 1, 8, 0, 0) },
+        time: { len: 4, type: 11, value: 946706400000 },
         value: { len: 0, type: 1, value: true },
       },
       {
-        time: { type: 11, value: new Date(1, 1, 1, 19, 0, 0) },
-        value: { type: 1, value: false },
+        time: { len: 4, type: 11, value: 946738800000 },
+        value: { len: 0, type: 1, value: false },
       },
     ],
     [
       {
-        time: { type: 11, value: new Date(1, 1, 1, 7, 0, 0) },
-        value: { type: 1, value: true },
+        time: { len: 4, type: 11, value: 946706400000 },
+        value: { len: 0, type: 1, value: true },
       },
       {
-        time: { type: 11, value: new Date(1, 1, 1, 16, 0, 0) },
-        value: { type: 1, value: false },
+        time: { len: 4, type: 11, value: 946738800000 },
+        value: { len: 0, type: 1, value: false },
+      },
+    ],
+    [
+      {
+        time: { len: 4, type: 11, value: 946706400000 },
+        value: { len: 0, type: 1, value: true },
       },
       {
-        time: { type: 11, value: new Date(1, 1, 1, 5, 0, 0) },
-        value: { type: 9, value: 1 },
+        time: { len: 4, type: 11, value: 946738800000 },
+        value: { len: 0, type: 1, value: false },
+      },
+    ],
+    [
+      {
+        time: { len: 4, type: 11, value: 946706400000 },
+        value: { len: 0, type: 1, value: true },
       },
       {
-        time: { type: 11, value: new Date(1, 1, 1, 18, 0, 0) },
-        value: { type: 9, value: 2 },
+        time: { len: 4, type: 11, value: 946738800000 },
+        value: { len: 0, type: 1, value: false },
+      },
+    ],
+    [
+      {
+        time: { len: 4, type: 11, value: 946706400000 },
+        value: { len: 0, type: 1, value: true },
+      },
+      {
+        time: { len: 4, type: 11, value: 946738800000 },
+        value: { len: 0, type: 1, value: false },
+      },
+    ],
+    [
+      {
+        time: { len: 4, type: 11, value: 946706400000 },
+        value: { len: 0, type: 1, value: true },
+      },
+      {
+        time: { len: 4, type: 11, value: 946738800000 },
+        value: { len: 0, type: 1, value: false },
+      },
+      {
+        time: { len: 4, type: 11, value: 946699200000 },
+        value: { len: 1, type: 9, value: 1 },
+      },
+      {
+        time: { len: 4, type: 11, value: 946746000000 },
+        value: { len: 1, type: 9, value: 3 },
       },
     ],
   ],
