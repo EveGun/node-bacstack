@@ -23,7 +23,7 @@ bacnetClient.readProperty(
   Bacnet.enum.PropertyIdentifier.DATE_LIST,
   (err, value) => {
     if (err) console.log(err);
-    if (value) value.values.forEach((val, index) => console.log('day: ' + index, val));
+    if (value) value.values.forEach((val, index) => console.log(val));
     bacnetClient.close();
   }
 );
