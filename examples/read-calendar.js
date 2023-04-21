@@ -27,26 +27,3 @@ bacnetClient.readProperty(
     bacnetClient.close();
   }
 );
-return;
-console.log(Bacnet.enum.PropertyIdentifier);
-
-bacnetClient.writeProperty(
-  '192.168.40.245',
-  { type: 6, instance: 0 },
-  Bacnet.enum.PropertyIdentifier.DATE_LIST,
-  [
-    {
-      type: Bacnet.enum.PropertyIdentifier.DATE,
-      value: { len: 4, year: 123, month: 8, day: 3, wday: 4 },
-    },
-    {
-      type: Bacnet.enum.PropertyIdentifier.DATE,
-      value: { len: 4, year: 123, month: 4, day: 20, wday: 4 },
-    },
-  ],
-  {},
-  (err, value) => {
-    if (err) console.log(err);
-    if (value) console.log(value);
-  }
-);
