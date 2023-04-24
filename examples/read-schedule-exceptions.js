@@ -19,6 +19,6 @@ bacnetClient.on('error', (err) => {
 
 bacnetClient.readProperty('192.168.40.245', { type: 17, instance: 0 }, Bacnet.enum.PropertyIdentifier.EXCEPTION_SCHEDULE, (err, value) => {
   if (err) console.log(err);
-  if (value) value.values.forEach((val, index) => console.log('exception: ' + index, JSON.stringify(val)));
+  if (value) console.log(JSON.stringify(value.values));
   bacnetClient.close();
 });
