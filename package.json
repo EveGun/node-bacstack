@@ -1,6 +1,6 @@
 {
   "name": "bacnet-node",
-  "version": "0.2.8",
+  "version": "0.2.9",
   "description": "The BACnet protocol library written in pure JavaScript.",
   "main": "index.js",
   "scripts": {
