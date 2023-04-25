@@ -10,7 +10,6 @@ const Bacnet = require('../index');
 
 // create instance of Bacnet
 const bacnetClient = new Bacnet({ apduTimeout: 2000 });
-
 // emitted on errors
 bacnetClient.on('error', (err) => {
   console.error(err);

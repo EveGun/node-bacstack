@@ -22,8 +22,8 @@ bacnetClient.writeProperty(
   { type: Bacnet.enum.ObjectType.SCHEDULE, instance: 0 },
   Bacnet.enum.PropertyIdentifier.EFFECTIVE_PERIOD,
   [
-    { type: 10, value: 1682546400000 },
-    { type: 10, value: 1690927200000 },
+    { type: 10, value: 1714083064000 },
+    { type: 10, value: -3600000 },
   ],
   (err, value) => {
     if (err) console.log(err);
