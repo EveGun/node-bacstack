@@ -19,11 +19,11 @@ bacnetClient.on('error', (err) => {
 
 bacnetClient.writeProperty(
   '192.168.40.245',
-  { type: Bacnet.enum.ObjectType.CALENDAR, instance: 0 },
+  { type: Bacnet.enum.ObjectType.SCHEDULE, instance: 0 },
   Bacnet.enum.PropertyIdentifier.EFFECTIVE_PERIOD,
   [
-    { type: 10, value: 1690927200000 },
     { type: 10, value: 1682546400000 },
+    { type: 10, value: 1690927200000 },
   ],
   (err, value) => {
     if (err) console.log(err);
