@@ -17,13 +17,8 @@ bacnetClient.on('error', (err) => {
   bacnetClient.close();
 });
 
-bacnetClient.readProperty(
-  '192.168.40.245',
-  { type: 6, instance: 0 },
-  Bacnet.enum.PropertyIdentifier.DATE_LIST,
-  (err, value) => {
-    if (err) console.log(err);
-    if (value) value.values.forEach((val, index) => console.log('day: ' + index, val));
-    bacnetClient.close();
-  }
-);
+bacnetClient.readProperty('192.168.40.245', { type: 6, instance: 0 }, Bacnet.enum.PropertyIdentifier.DATE_LIST, (err, value) => {
+  if (err) console.log(err);
+  if (value) console.log(value);
+  bacnetClient.close();
+});
