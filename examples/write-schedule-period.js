@@ -1,11 +1,5 @@
 'use strict';
 
-/**
- * This script will discover all devices in the network and print out their names
- *
- * After 30s the discovery is stopped automatically
- */
-
 const Bacnet = require('../index');
 
 // create instance of Bacnet
@@ -22,6 +16,7 @@ bacnetClient.writeProperty(
   { type: Bacnet.enum.ObjectType.SCHEDULE, instance: 0 },
   Bacnet.enum.PropertyIdentifier.EFFECTIVE_PERIOD,
   [
+    // write -3600000 to set 'any'
     { type: 10, value: 1714083064000 },
     { type: 10, value: -3600000 },
   ],

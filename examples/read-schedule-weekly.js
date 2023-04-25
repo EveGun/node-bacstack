@@ -1,11 +1,5 @@
 'use strict';
 
-/**
- * This script will discover all devices in the network and print out their names
- *
- * After 30s the discovery is stopped automatically
- */
-
 const Bacnet = require('../index');
 
 // create instance of Bacnet
@@ -17,13 +11,8 @@ bacnetClient.on('error', (err) => {
   bacnetClient.close();
 });
 
-bacnetClient.readProperty(
-  '192.168.40.245',
-  { type: 17, instance: 0 },
-  Bacnet.enum.PropertyIdentifier.WEEKLY_SCHEDULE,
-  (err, value) => {
-    if (err) console.log(err);
-    if (value) value.values.forEach((val, index) => console.log('day: ' + index, val));
-    bacnetClient.close();
-  }
-);
+bacnetClient.readProperty('192.168.40.245', { type: 17, instance: 0 }, Bacnet.enum.PropertyIdentifier.WEEKLY_SCHEDULE, (err, value) => {
+  if (err) console.log(err);
+  if (value) value.values.forEach((val, index) => console.log('day: ' + index, val));
+  bacnetClient.close();
+});
