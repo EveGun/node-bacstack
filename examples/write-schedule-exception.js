@@ -13,7 +13,7 @@ bacnetClient.on('error', (err) => {
 
 bacnetClient.writeProperty(
   '192.168.40.245',
-  { type: 17, instance: 0 },
+  { type: 17, instance: 1 },
   Bacnet.enum.PropertyIdentifier.EXCEPTION_SCHEDULE,
   [
     // one row for each exception
@@ -21,6 +21,12 @@ bacnetClient.writeProperty(
       date: {
         type: 10,
         value: 1684965600000,
+        raw: {
+          year: 255,
+          month: 255,
+          day: 255,
+          wday: 255,
+        },
       },
       events: [
         {
