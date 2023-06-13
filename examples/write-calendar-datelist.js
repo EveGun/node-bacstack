@@ -18,7 +18,16 @@ bacnetClient.writeProperty(
   [
     { type: 10, value: 1690927200000 },
     { type: 10, value: 1682546400000 },
-    { type: 10, value: 1690203600000 },
+    {
+      type: 10,
+      value: 1690203600000,
+      raw: {
+        day: 1,
+        month: 4,
+        year: 123,
+        wday: 255,
+      },
+    },
   ],
   (err, value) => {
     if (err) console.log(err);
