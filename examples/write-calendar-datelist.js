@@ -28,6 +28,35 @@ bacnetClient.writeProperty(
         wday: 255,
       },
     },
+    {
+      type: 102, // daterange can only be written with wday set AFAIK
+      value: [
+        {
+          type: 10,
+          value: 1672531200000,
+          /*raw: {
+            day: 12,
+            month: 6,
+            year: 123,
+            wday: 1,
+          },*/
+        },
+        {
+          type: 10,
+          value: 1677628800000,
+          /*raw: {
+            day: 14,
+            month: 6,
+            year: 123,
+            wday: 3,
+          },*/
+        },
+      ],
+    },
+    {
+      type: 101,
+      value: { month: 2, week: 2, wday: 2 },
+    },
   ],
   (err, value) => {
     if (err) console.log(err);
