@@ -3,7 +3,7 @@
 const Bacnet = require('../index');
 
 // create instance of Bacnet
-const bacnetClient = new Bacnet({ apduTimeout: 2000, port: 47808, bacnetDeviceOptions: { deviceInstance: 10000 } });
+const bacnetClient = new Bacnet({ apduTimeout: 2000, port: 47808, bacnetDeviceOptions: { deviceInstance: 10000, executesReadPropertyMultiple: false } });
 
 // emitted on errors
 bacnetClient.on('error', (err) => {
