@@ -19,6 +19,6 @@ bacnetClient.on('error', (err) => {
 
 bacnetClient.getEventInformation('192.168.40.245', null, { maxSegments: Bacnet.enum.MaxSegmentsAccepted.SEGMENTS_0 }, (err, value) => {
   if (err) console.log(err);
-  if (value) console.log(value);
+  if (value) value.alarms.forEach((alarm) => console.log(alarm));
   //bacnetClient.close();
 });
