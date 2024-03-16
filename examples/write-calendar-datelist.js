@@ -12,7 +12,7 @@ bacnetClient.on('error', (err) => {
 });
 
 bacnetClient.writeProperty(
-  '192.168.40.245',
+  '192.168.40.50',
   { type: Bacnet.enum.ObjectType.CALENDAR, instance: 0 },
   Bacnet.enum.PropertyIdentifier.DATE_LIST,
   [
