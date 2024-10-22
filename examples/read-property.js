@@ -11,7 +11,7 @@ bacnetClient.on('error', (err) => {
   bacnetClient.close();
 });
 
-bacnetClient.readProperty('192.168.40.245', { type: 8, instance: 1319071 }, Bacnet.enum.PropertyIdentifier.DEVICE_ADDRESS_BINDING, { maxSegments: Bacnet.enum.Segmentation.NO_SEGMENTATION }, (err, value) => {
+bacnetClient.readProperty('192.168.40.50', { type: 8, instance: 620643 }, Bacnet.enum.PropertyIdentifier.ALL, { maxSegments: Bacnet.enum.MaxSegmentsAccepted.SEGMENTS_64 }, (err, value) => {
   if (err) console.log(err);
   if (value) console.log(value.values);
   //bacnetClient.close();
