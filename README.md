@@ -72,7 +72,7 @@ changes. Ask the active NPM publishers if you need some advice to start your con
 
 ## Notes
 
-This fork has some hacks to be able to read and write BACnet WEEKLY_SCHEDULE(17) and CALENDAR(6), props EFFECTIVE_PERIOD, WEEKLY_SCHEDULE, EXCEPTION_SCHEDULE and DATE_LIST.
+This fork has some hacks to be able to read and write BACnet WEEKLY_SCHEDULE(17) and CALENDAR(6), props EFFECTIVE_PERIOD, WEEKLY_SCHEDULE, EXCEPTION_SCHEDULE and DATE_LIST. It is also hacked to parse segmented messages correctly.
 Examples of how to use, see examples/ folder.
 
 ## License
